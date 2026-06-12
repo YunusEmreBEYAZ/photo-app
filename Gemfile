@@ -64,3 +64,9 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+group :production do
+  # Use a real queuing backend for Active Job (and separate queues per environment)
+  gem "sidekiq"
+  gem "pg"
+end
